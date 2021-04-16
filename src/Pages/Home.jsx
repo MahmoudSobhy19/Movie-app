@@ -7,7 +7,7 @@ const Home = () => {
     const [movies, setMovies] = useState([]);
 
     const loadMovies = () => {
-        axios.get("http://api.tvmaze.com/shows")
+        axios.get("https://api.tvmaze.com/shows")
         .then(Response => {
             setMovies(Response.data)
         })

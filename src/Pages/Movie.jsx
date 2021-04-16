@@ -12,7 +12,7 @@ const Movie = (props) => {
     }, []);
     
     const loadMovie = () => {
-        axios.get(`http://api.tvmaze.com/shows/${props.match.params.id}`)
+        axios.get(`https://api.tvmaze.com/shows/${props.match.params.id}`)
         .then(Response => {
             setMovie(Response.data);
         })
