@@ -1,0 +1,81 @@
+.movie {
+    width: 90%;
+    padding: 40px 15px;
+    margin: 40px auto;
+    background-color: #dfdfdf;
+    border-radius: 5px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.384);
+
+    
+    button {
+        position: absolute;
+        top: 22px;
+        left: 50px;
+        width: 120px;
+        padding: 8px 0;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: medium;
+        background-color: #f01c1c;
+        color: #1f1e1e;
+        border: none ;
+        margin-left: 15px;
+
+        &:hover{
+            background-color: #f84545;
+        }
+        
+        &:focus{
+            outline-color: #f84545;
+        }
+    }
+
+    img {
+        border-radius: 5px;
+        margin-left: 20px;
+        width: 25vw;
+    }
+
+    .info {
+        display: flex;
+
+        .det {
+            margin-left: 40px;
+            font-size: 20px;
+            line-height: 2;
+            color: #1b1b1b;
+
+            h1 {
+                text-align: center;
+                color: #f01c1c;
+                font-size: 50px;
+            }
+
+            span {
+                color: #f01c1c;
+            }
+
+            .genres {
+                display: flex;
+
+                ul {
+                    display: flex;
+                }
+
+                li {
+                    list-style: none;
+                    margin-left: 8px;
+                }
+            }
+
+            .descripe {
+            color: #4e4e4e;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-top: 20px;
+            width: 40vw;
+            }
+        }
+    }
+
+}
